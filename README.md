@@ -14,7 +14,7 @@ Despite having solved a lot of these problems, it's not gonna easy for my since 
 > I realized that I have completed forgotten everything about competitive programming. I had to recheck a lot of my past solutions, but it was fun.
 > Note: remember to use long long for every variable
 ### May
-- 1/5: 
+- 1/5: 2 Introductory
 ## Author Information
 - Facebook - [Huynh Khac Tam](https://www.facebook.com/hkt456/)
 - Github - [HKT456](https://github.com/hkt456)
