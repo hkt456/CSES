@@ -13,7 +13,9 @@ Despite having solved a lot of these problems, it's not gonna easy for my since 
 - 30/4: 4 Introductory, 2 Sorting and Searching, 2 DP, 1 Graph
 > I realized that I have completed forgotten everything about competitive programming. I had to recheck a lot of my past solutions, but it was fun.
 > Note: remember to use long long for every variable
+### May
+- 1/5: 
 ## Author Information
 - Facebook - [Huynh Khac Tam](https://www.facebook.com/hkt456/)
 - Github - [HKT456](https://github.com/hkt456)
-- Personal Email - [Huynh Khac Tam](tamhuynhkhac@gmail.com)
+- Personal Email - [Huynh Khac Tam](tamhuynhkhac@gmail.com)             
