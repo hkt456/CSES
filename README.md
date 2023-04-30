@@ -1,5 +1,5 @@
 # CSES Algorithms
-![Repo image]{assets/cseslogo.jpeg}
+![Repo image](assets/cseslogo.jpeg)
 >These are my solutions for the algorithmic problems on cses.fi
 ## Description
 I am challenging myself to do a problem on CSES everyday to regain my confidence in Algorithms and Data Structure, prepping for competitive programming, brushing up on my problem solving skills since they are getting rusty.
