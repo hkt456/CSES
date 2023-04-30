@@ -10,8 +10,10 @@ Despite having solved a lot of these problems, it's not gonna easy for my since 
 - Mac Machine
 ## Journaling
 ### April
-- 30/4: 2 Introductory, 2 Sorting and Searching, 2 DP
->I realized that I have completed forgotten everything about competitive programming. I had to recheck a lot of my past solutions, but it was fun.
+- 30/4: 2 Introductory, 2 Sorting and Searching, 2 DP, 1 Graph
+>
+- I realized that I have completed forgotten everything about competitive programming. I had to recheck a lot of my past solutions, but it was fun.
+- Note: remember to use long long for every variable
 ## Author Information
 - Facebook - [Huynh Khac Tam](https://www.facebook.com/hkt456/)
 - Github - [HKT456](https://github.com/hkt456)
