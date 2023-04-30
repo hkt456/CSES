@@ -7,6 +7,9 @@ I am challenging myself to do a problem on CSES everyday to regain my confidence
 - The codes are written in C++
 - It is run using Visual Studio Code 
 - Mac Machine
+## Journaling
+### April
+- 30/4: 2 Introductory, 2 Sorting and Searching, 2 DP
 ## Author Information
 - Facebook - [Huynh Khac Tam](https://www.facebook.com/hkt456/)
 - Github - [HKT456](https://github.com/hkt456)
