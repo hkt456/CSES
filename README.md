@@ -14,7 +14,7 @@ Despite having solved a lot of these problems, it's not gonna easy for my since 
 > I realized that I have completed forgotten everything about competitive programming. I had to recheck a lot of my past solutions, but it was fun.
 > Note: remember to use long long for every variable
 ### May
-- 1/5: 6 Introductory, 1 Tree, 2 Sorting and Searching, 1 DP
+- 1/5: 6 Introductory, 1 Tree, 2 Sorting and Searching, 2 DP
 >Note: remember how to use memset() lol
 ## Author Information
 - Facebook - [Huynh Khac Tam](https://www.facebook.com/hkt456/)
