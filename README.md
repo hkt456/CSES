@@ -1,6 +1,7 @@
 # CSES Algorithms
 ![Repo image](assets/cseslogo.jpeg)
 >These are my solutions for the algorithmic problems on cses.fi
+Total completed problems:
 | Problem Type          | Number Solved |
 |-----------------------|:-------------:|
 | Introductory Problems |     12/19     |
