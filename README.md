@@ -1,8 +1,7 @@
 # CSES Algorithms
 ![Repo image](assets/cseslogo.jpeg)
 >These are my solutions for the algorithmic problems on cses.fi
-
-## Description
+## Count
 Total completed problems:
 | Problem Type          | Number Solved |
 |-----------------------|:-------------:|
@@ -18,6 +17,7 @@ Total completed problems:
 | Advanced Techniques   |     0/24     |
 | Additional Problems   |     0/77     |
 | **Total**             |  **43/300**  |
+## Description
 I am challenging myself to do a problem on CSES everyday to regain my confidence in Algorithms and Data Structure, prepping for competitive programming, brushing up on my problem solving skills since they are getting rusty. 
 Despite having solved a lot of these problems, it's not gonna easy for my since it has been months since I last did cp. 
 ### Setup
