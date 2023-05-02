@@ -1,6 +1,21 @@
 # CSES Algorithms
 ![Repo image](assets/cseslogo.jpeg)
 >These are my solutions for the algorithmic problems on cses.fi
+| Problem Type          | Number Solved |
+|-----------------------|:-------------:|
+| Introductory Problems |     12/19     |
+| Sorting and Searching |     4/35     |
+| Dynamic Programming   |     7/19     |
+| Graph Algorithms      |     3/36     |
+| Range Queries         |     0/19     |
+| Tree Algorithms       |     16/16     |
+| Mathematics           |     1/31     |
+| String Algorithms     |     0/17     |
+| Geometry              |      0/7      |
+| Advanced Techniques   |     0/24     |
+| Additional Problems   |     0/77     |
+| **Total**             |  **43/300**  |
+
 ## Description
 I am challenging myself to do a problem on CSES everyday to regain my confidence in Algorithms and Data Structure, prepping for competitive programming, brushing up on my problem solving skills since they are getting rusty. 
 Despite having solved a lot of these problems, it's not gonna easy for my since it has been months since I last did cp. 
@@ -17,7 +32,7 @@ Despite having solved a lot of these problems, it's not gonna easy for my since 
 - 1/5: 6 Introductory, 1 Tree, 2 Sorting and Searching, 4 DP, 2 Graph
 >Note: remember how to use memset() lol. Starting to remember why I absolutely loved graph algorithms.
 
-- 2/5: 2 Introductory
+- 2/5: 2 Introductory, 1 DP, 1 Math 
 ## Author Information
 - Facebook - [Huynh Khac Tam](https://www.facebook.com/hkt456/)
 - Github - [HKT456](https://github.com/hkt456)
