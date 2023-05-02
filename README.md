@@ -9,7 +9,7 @@ Total completed problems:
 | Sorting and Searching |     4/35     |
 | Dynamic Programming   |     7/19     |
 | Graph Algorithms      |     3/36     |
-| Range Queries         |     0/19     |
+| Range Queries         |     1/19     |
 | Tree Algorithms       |     16/16     |
 | Mathematics           |     1/31     |
 | String Algorithms     |     0/17     |
@@ -33,7 +33,7 @@ Despite having solved a lot of these problems, it's not gonna easy for my since 
 - 1/5: 6 Introductory, 1 Tree, 2 Sorting and Searching, 4 DP, 2 Graph
 >Note: remember how to use memset() lol. Starting to remember why I absolutely loved graph algorithms.
 
-- 2/5: 2 Introductory, 1 DP, 1 Math 
+- 2/5: 2 Introductory, 1 DP, 1 Math, 1 Range
 ## Author Information
 - Facebook - [Huynh Khac Tam](https://www.facebook.com/hkt456/)
 - Github - [HKT456](https://github.com/hkt456)
