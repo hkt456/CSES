@@ -34,6 +34,7 @@ Despite having solved a lot of these problems, it's not gonna easy for my since 
 >Note: remember how to use memset() lol. Starting to remember why I absolutely loved graph algorithms.
 
 - 2/5: 2 Introductory, 1 DP, 1 Math, 1 Range
+>I got AP CSA the day after so I couldn't really spend much time on cp today.
 ## Author Information
 - Facebook - [Huynh Khac Tam](https://www.facebook.com/hkt456/)
 - Github - [HKT456](https://github.com/hkt456)
