@@ -35,6 +35,8 @@ Despite having solved a lot of these problems, it's not gonna easy for my since 
 
 - 2/5: 2 Introductory, 1 DP, 1 Math, 1 Range
 >I got AP CSA the day after so I couldn't really spend much time on cp today.
+- 3/5: 
+>Just finished AP CSA, never gonna use Java again.
 ## Author Information
 - Facebook - [Huynh Khac Tam](https://www.facebook.com/hkt456/)
 - Github - [HKT456](https://github.com/hkt456)
