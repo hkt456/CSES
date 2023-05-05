@@ -37,6 +37,9 @@ Despite having solved a lot of these problems, it's not gonna easy for my since 
 >I got AP CSA the day after so I couldn't really spend much time on cp today.
 - 3/5: 
 >Just finished AP CSA, never gonna use Java again. I have finals tomorrow so I wont be able to do much 
+- 4/5: None
+> It's my birthday so I'm gonna take the day off.
+- 5/5: 1 Introductory 
 ## Author Information
 - Facebook - [Huynh Khac Tam](https://www.facebook.com/hkt456/)
 - Github - [HKT456](https://github.com/hkt456)
