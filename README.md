@@ -40,6 +40,7 @@ Despite having solved a lot of these problems, it's not gonna easy for my since 
 - 4/5: None
 > It's my birthday so I'm gonna take the day off.
 - 5/5: 1 Introductory 
+- 6/5: 1 Introductory 
 ## Author Information
 - Facebook - [Huynh Khac Tam](https://www.facebook.com/hkt456/)
 - Github - [HKT456](https://github.com/hkt456)
