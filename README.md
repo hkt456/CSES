@@ -43,6 +43,7 @@ Despite having solved a lot of these problems, it's not gonna easy for my since 
 - 6/5: 1 Introductory 
 - 7/5: 2 Introductory
 - 8/5: 1 Introductory
+- 9/5: 1 Introductory
 ## Author Information
 - Facebook - [Huynh Khac Tam](https://www.facebook.com/hkt456/)
 - Github - [HKT456](https://github.com/hkt456)
