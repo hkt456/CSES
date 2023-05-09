@@ -5,7 +5,7 @@
 Total completed problems:
 | Problem Type          | Number Solved |
 |-----------------------|:-------------:|
-| Introductory Problems |     12/19     |
+| Introductory Problems |     19/19     |
 | Sorting and Searching |     4/35     |
 | Dynamic Programming   |     7/19     |
 | Graph Algorithms      |     3/36     |
