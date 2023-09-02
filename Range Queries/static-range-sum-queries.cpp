@@ -1,20 +1,16 @@
 #include <bits/stdc++.h>
-
 using namespace std;
-typedef long long ll;
-const int maxN = 2e5;
-
 int main(){
-    ll N, Q, a, b;
-    ll arr[maxN+5];
-    cin>>N>>Q;
-    for(ll i = 1; i <= N; i++){
+    long long n,q,a,b;
+    cin>>n>>q;
+    long long arr[n+1];
+    for(int i=1; i<=n; i++){
         cin>>arr[i];
-        arr[i] += arr[i-1];
+        arr[i]+=arr[i-1];
     }
-    for(ll q = 0; q < Q; q++){
+    for(int i=0; i<q; i++){
         cin>>a>>b;
         cout<<arr[b]-arr[a-1]<<endl;
     }
-
+    return 0;
 }
