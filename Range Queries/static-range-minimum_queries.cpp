@@ -1,10 +1,10 @@
 #include <bits/stdc++.h>
 using namespace std;
-
+ 
 const int N = 200001;
 int arr[N];
 int st[4*N];
-
+ 
 int build(int si, int ss, int se){
     if(ss==se) return st[si]=arr[se];
     int mid = (se+ss)>>1;
@@ -16,7 +16,7 @@ int getMin(int si, int ss, int se, int l, int r){
     int mid=(se+ss)>>1;
     return min(getMin(2*si, ss, mid, l, r), getMin(2*si+1, mid+1, se, l, r));
 }
-
+ 
 int main(){
     int n,q,a,b;
     cin>>n>>q;
