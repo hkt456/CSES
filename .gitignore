@@ -1,0 +1,13 @@
+*.bin
+Additional Problems/*.bin
+Dynamic Programming/*.bin
+Graph Algorithms/*.bin
+Introductory Problems/*.bin
+Mathematics/*.bin
+Range Queries/*.bin
+Sorting and Searching/*.bin
+String Algorithms/*.bin
+Geometry/*.bin
+Advanced Techniques/*.bin
+Tree Algorithms/*.bin
+.vscode/*
