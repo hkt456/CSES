@@ -1,34 +1,45 @@
-/*
-Problem Name: Josephus Problem II
-Problem Link: https://cses.fi/problemset/task/2163
-Author: Sachin Srivastava (mrsac7)
-*/
-#include<bits/stdc++.h>
-// #include <ext/pb_ds/assoc_container.hpp>
-using namespace __gnu_pbds;
+#include <bits/stdc++.h>
 using namespace std;
 
-typedef tree<int,null_type,less<int>,rb_tree_tag, tree_order_statistics_node_update> indexed_set;
-#define int long long
-#define endl '\n'
+const int N = 5e5;
+int n, k, fen[N];
 
-signed main(){
-    ios_base::sync_with_stdio(false);cin.tie(0);cout.tie(0);
-    #ifdef LOCAL
-    freopen("input.txt", "r" , stdin);
-    freopen("output.txt", "w", stdout);
-    #endif
-    
-    indexed_set s;
-    int n,k; cin>>n>>k;
-    for (int i = 1; i <= n; i++)
-        s.insert(i);
+void add(int p, int v) {
+  for (; p < N; p += p & -p) fen[p] += v;
+}
 
-    int ind = k%n;
-    while(n--) {
-        auto y = s.find_by_order(ind);
-        cout<<*y<<' ';
-        s.erase(y);
-        if (n) ind = (ind%n + k)%n;
-    }   
+int sum(int p) {
+  int v = 0;
+  for (; p > 0; p -= p & -p) v += fen[p];
+  return v;
+}
+
+int search(int v) {
+  int p = 0;
+  for (int i = 20; i >= 0; --i) {
+    if (p + (1 << i) < N && fen[p + (1 << i)] < v) {
+      p += (1 << i);
+      v -= fen[p];
+    }
+  }
+  return p + 1;
+}
+
+int main() {
+  ios::sync_with_stdio(false); cin.tie(0); cout.tie(0);
+  cin >> n >> k; ++k;
+  for (int i = 1; i <= n; ++i) {
+    add(i, 1);
+    add(i + n, 1);
+  }
+  for (int i = n, last = 0; i >= 1; --i) {
+    int h = (k - 1) % i + 1;
+    last = search(sum(last) + h);
+    if (last > n) last -= n;
+    cout << last << " ";
+    add(last, -1);
+    add(last + n, -1);
+  }
+  cout << "\n";
+  return 0;
 }
