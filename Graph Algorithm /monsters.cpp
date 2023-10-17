@@ -1,12 +1,12 @@
 #include <bits/stdc++.h>
 using namespace std;
- 
+
 void fastInputOutput(){
     cin.tie(nullptr)->sync_with_stdio(false);
 }
 #define ll long long
 #define pi pair<ll, ll>
- 
+
 class Monsters {
 public:
     void run() {
@@ -24,7 +24,7 @@ public:
     vector<tuple<ll, ll, char>> dirs = {{0, 1, 'R'}, {1, 0, 'D'}, {0, -1, 'L'}, {-1, 0, 'U'}};
     vector<vector<tuple<ll, ll, char>>> previousLocation;
     string result = "NO";
- 
+
     void readInput() {
         cin >> rlen >> clen;
         grid.resize(rlen);
@@ -43,7 +43,7 @@ public:
             }
         }
     }
- 
+
     void bfsMonstersToEdges() {
         while (!monstersLocations.empty()) {
             auto node = monstersLocations.front();
@@ -61,7 +61,7 @@ public:
             }
         }
     }
- 
+
     bool isEdge(ll row, ll col) {
         return row == 0 || col == 0 || row == rlen-1 || col == clen-1;
     }
@@ -90,7 +90,7 @@ public:
             }
         }
     }
- 
+
     void constructPath(ll row, ll col) {
         result = "YES\n";
         string path;
@@ -105,12 +105,12 @@ public:
         result += path;
     }
 };
- 
+
 int main(){
     fastInputOutput();
- 
+
     Monsters solution;
     solution.run();
- 
+
     return 0;
 }
