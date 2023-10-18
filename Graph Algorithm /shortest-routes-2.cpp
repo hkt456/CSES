@@ -32,7 +32,7 @@ public:
             dist[a][b] = min(dist[a][b], c);
             dist[b][a] = min(dist[b][a], c);
         }
-        for(int i = 0; i<n; i++){
+        for(int i = 0; i<=n; i++){
             dist[i][i] = 0;
         }
 
