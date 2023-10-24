@@ -16,6 +16,7 @@ public:
     
     void run(){
       readInput();
+      print_answer();
     }
     
 
@@ -37,7 +38,7 @@ public:
       return x*x+y*y;
     }
     
-    bool cmp(pi a, pi b){
+    static bool cmp(pi a, pi b){
       return a.second < b.second;
     }
     
