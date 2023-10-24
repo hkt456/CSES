@@ -81,7 +81,7 @@ public:
     void bellmanFord(){
         fill(dp+2, dp+n+1, INF);
         bool isImproving = true;
-        for(int i = 0; i <= n && isImproving; i++){
+        for(int i = 1; i <= n && isImproving; i++){
             isImproving = false;
             for(int j = 1; j <= m; j++){
                 ll u = edges[j].a;
