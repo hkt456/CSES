@@ -18,11 +18,11 @@ public:
       readInput();
       print_answer();
     }
-    
 
     int n;
     vector<pi> points;
     vector<pi> temp;
+
     void readInput(){
       cin>>n;
       points.assign(n, {0,0});
