@@ -11,10 +11,19 @@ void fastInputOutput(){
 const ll maxN = 1e5+5;
 const ll INF = 0x3f3f3f3f3f3f3f3f;
 
+// Implement for me the Enratosthenes sieve algotithm in a function called sieve
+// The function should return a vector of booleans where the ith element is true if i is prime and false otherwise
+bool enratosthenesSieve[maxN];
+vector<int> primes;
+bool isPrime(long long x){
+  
+}
+
+
 class Problem{
 public:    
     
-    void run(){
+    void run(){   
       readInput();
       print_answer();
     }
