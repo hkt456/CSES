@@ -1,74 +1,66 @@
-#include <iostream>
-#include <vector>
-
+#include <bits/stdc++.h>
 using namespace std;
 
-vector<long long> segment_tree;
+const int maxN = 2*1e5+5;
+int n,q;
+int arr[maxN];
 
-void build_tree(const vector<long long> &arr, int node, int start, int end) {
-    if (start == end) {
-        segment_tree[node] = arr[start];
-    } else {
-        int mid = (start + end) / 2;
-        build_tree(arr, 2 * node, start, mid);
-        build_tree(arr, 2 * node + 1, mid + 1, end);
-        segment_tree[node] = segment_tree[2 * node] + segment_tree[2 * node + 1];
-    }
+struct Nodes{
+    int val;
+    int lazy;
+    Nodes(): val(0), lazy(0){}
+    Nodes(int val, int lazy): val(val), lazy(lazy){}
+} st[4*maxN];
+
+
+Nodes build(int si, int ss, int se){
+    if(ss==se && ss==si) return st[ss] =  Nodes(arr[ss], 0);
+    int mid = (ss+se)>>1;
+    build(2*si, ss, mid);
+    build(2*si+1, mid+1, se);
+    return st[si];
 }
 
-void update_tree(int node, int start, int end, int left, int right, int val) {
-    if (left > end || right < start) {
-        return;
-    }
-    if (start == end) {
-        segment_tree[node] += val;
-        return;
-    }
-    int mid = (start + end) / 2;
-    update_tree(2 * node, start, mid, left, right, val);
-    update_tree(2 * node + 1, mid + 1, end, left, right, val);
-    segment_tree[node] = segment_tree[2 * node] + segment_tree[2 * node + 1];
+void down(int id){
+    int t = st[id].lazy;
+    st[2*id].lazy += t;
+    st[2*id+1].lazy += t;
+    st[2*id].val += t;
+    st[2*id+1].val += t;
+    st[id].lazy = 0;
 }
 
-long long query_tree(int node, int start, int end, int idx) {
-    if (start == end) {
-        return segment_tree[node];
+void update(int si, int ss, int se, int l, int r, int val){
+    if(ss>r || se<l) return;
+    if(ss>=l && se<=r){
+        st[si].val+=val;
+        st[si].lazy+=val;
     }
-    int mid = (start + end) / 2;
-    if (idx <= mid) {
-        return query_tree(2 * node, start, mid, idx);
-    } else {
-        return query_tree(2 * node + 1, mid + 1, end, idx);
-    }
+    down(si);
+    int mid = (ss+se)>>1;
+    update(2*si, ss, mid, l, r, val);
+    update(2*si+1, mid+1, se, l, r, val);
+    arr[si] += val;
 }
 
-int main() {
-    int n, q;
-    cin >> n >> q;
-
-    vector<long long> arr(n);
-    for (int i = 0; i < n; ++i) {
-        cin >> arr[i];
-    }
-
-    // Build segment tree
-    segment_tree.resize(4 * n);
-    build_tree(arr, 1, 0, n - 1);
-
-    while (q--) {
-        int type;
-        cin >> type;
-
-        if (type == 1) {
-            int a, b, u;
-            cin >> a >> b >> u;
-            update_tree(1, 0, n - 1, a - 1, b - 1, u);
-        } else {
+int main(){
+    cin>>n>>q;
+    for(int i=1; i<=n; i++) cin>>arr[i];
+    build(1, 1, n);
+    while(q--){
+        int code;
+        int l,r;
+        cin>>code;
+        if(code==1){
+            int val;
+            cin>>l>>r>>val;
+            update(1, 1, n, l, r, val);
+        }
+        else{
             int k;
-            cin >> k;
-            cout << query_tree(1, 0, n - 1, k - 1) << endl;
+            cin>>k;
+            cout<<st[k].val<<endl;
         }
     }
-
     return 0;
 }
