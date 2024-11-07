@@ -1,66 +1,60 @@
 #include <bits/stdc++.h>
+
 using namespace std;
 
-const int maxN = 2*1e5+5;
-int n,q;
-int arr[maxN];
+struct BIT {
+    vector<long long> bit;
+    BIT(long long size){
+        bit.resize(size);
+     }
 
-struct Nodes{
-    int val;
-    int lazy;
-    Nodes(): val(0), lazy(0){}
-    Nodes(int val, int lazy): val(val), lazy(lazy){}
-} st[4*maxN];
-
-
-Nodes build(int si, int ss, int se){
-    if(ss==se && ss==si) return st[ss] =  Nodes(arr[ss], 0);
-    int mid = (ss+se)>>1;
-    build(2*si, ss, mid);
-    build(2*si+1, mid+1, se);
-    return st[si];
-}
-
-void down(int id){
-    int t = st[id].lazy;
-    st[2*id].lazy += t;
-    st[2*id+1].lazy += t;
-    st[2*id].val += t;
-    st[2*id+1].val += t;
-    st[id].lazy = 0;
-}
-
-void update(int si, int ss, int se, int l, int r, int val){
-    if(ss>r || se<l) return;
-    if(ss>=l && se<=r){
-        st[si].val+=val;
-        st[si].lazy+=val;
+    void update(long long index, long long delta){
+        for(; index<bit.size(); index |= index+1){
+            bit[index] += delta;
+        }
     }
-    down(si);
-    int mid = (ss+se)>>1;
-    update(2*si, ss, mid, l, r, val);
-    update(2*si+1, mid+1, se, l, r, val);
-    arr[si] += val;
-}
+
+    void update(long long l, long long r, long long delta){
+        update(l, delta);
+        update(r+1, -delta);
+    }
+
+    long long get(long long i){
+        long long res = 0;
+        for(; i>=0; i = (i & (i+1)) - 1){
+            res += bit[i];
+        }
+        return res;
+    }
+
+
+};
 
 int main(){
+    long long n,q;
+    vector<long long> arr;
+
     cin>>n>>q;
-    for(int i=1; i<=n; i++) cin>>arr[i];
-    build(1, 1, n);
+    arr.resize(n);
+    for(int i=0; i<n; i++){
+        cin>>arr[i];
+    }
+
+    BIT bit(n);
+    long long t,l,r,x;
+
     while(q--){
-        int code;
-        int l,r;
-        cin>>code;
-        if(code==1){
-            int val;
-            cin>>l>>r>>val;
-            update(1, 1, n, l, r, val);
+        cin>>t;
+        if(t==1){
+            cin>>l>>r>>x;
+            bit.update(l-1, r-1, x);
         }
         else{
-            int k;
-            cin>>k;
-            cout<<st[k].val<<endl;
+            cin>>x;
+            cout<<arr[x-1] + bit.get(x-1)<<endl;
         }
     }
+
     return 0;
+
 }
